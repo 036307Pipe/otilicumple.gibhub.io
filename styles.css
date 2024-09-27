@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/image/fondonuevo.jpg);
+font-family: satisfy;
+color: rgb(185, 77, 95);
+}
+
+@font-face {
+    font-family:sofad ;
+    src: url(font/Sofadi_One.zip);
+}
+.invitacion {
+    background-image: url(img/image/bordenuevo.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border: #e2dfda;
+    border-radius: 100px;
+    box-shadow: 20px 20px 20px 20px rgba(12, 8, 8, 0.5);
+    color: rgb(114, 66, 66);
+    text-align: center;
+    max-width: 700px;
+    
+}
+
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-family: satisfy;
+}
+
+p {
+    font-size: 1.7em;
+    margin: 0px;
+    font-family: satisfy;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmar-btn {
+    margin-top: 25px;
+    padding: 20px 20px;
+    font-size: 1.2em;
+    background-color: #ec91d1; /* Color del botÃ³n */
+    color: black; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirmar-btn:hover {
+    background-color: #e6479e; /* Color al pasar el mouse */
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 3; 
+    left: 50%; /* Centrar horizontalmente */
+    top: 50%; /* Centrar verticalmente */
+    transform: translate(-50%, -50%); /* Ajustar al centro */
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+    max-height: 80%; /* Limitar altura */
+    overflow: auto; /* Permitir scroll si el contenido excede la altura */
+    background-color: rgba(182, 145, 145, 0.4); 
+    color: rgb(252, 254, 255);
+}
+
+.modal-content {
+    background-color: #db8888;
+    padding: 20px; /* Espaciado interno */
+    border: 10px solid #888;
+    border-radius: 10px; /* Bordes redondeados */
+}
+.modal-content h2 {
+    font-size: 2em; /* Cambia el tamaÃ±o del tÃ­tulo */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+.modal-content label {
+    font-size: 1.7em; /* Cambia el tamaÃ±o de la etiqueta */
+}
+
+.modal-content input {
+    font-size: 1.2em; /* Cambia el tamaÃ±o del texto del input */
+}
+
+.modal-content button {
+    font-size: 1.2em; /* Cambia el tamaÃ±o del botÃ³n */
+}
+.close {
+    color: #130f0f;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(122, 25, 25);
+    text-decoration: none;
+    cursor: pointer;
+}
+.globo {
+    position: absolute;
+    bottom: 80px;
+    width: 250px; /* TamaÃ±o base */
+    height: auto;
+    animation: flotar 8s infinite;
+}
+
+/* Cambia la posiciÃ³n y tamaÃ±o para crear el efecto 3D */
+.globo:nth-child(1) { left: 8%; width: 100px; opacity: 0.9; animation-delay: 1s; }
+.globo:nth-child(2) { left: 10%; width: 100px; opacity: 0.9; animation-delay: 2s; }
+.globo:nth-child(3) { left: 75%; width: 120px; opacity: 0.85; animation-delay: 6s; }
+.globo:nth-child(4) { left: 20%; width: 140px; opacity: 0.6; animation-delay: 4s; }
+.globo:nth-child(5) { left: 25%; width: 120px; opacity: 0.5; animation-delay: 5s; }
+.globo:nth-child(6) { left: 75%; width: 100px; opacity: 0.95; animation-delay: 5s; }
+.globo:nth-child(7) { left: 68%; width: 110px; opacity: 0.8; animation-delay: 4s; }
+.globo:nth-child(8) { left: 78px; width: 130px; opacity: 0.85; animation-delay: 3s; }
+.globo:nth-child(9) { left: 80%; width: 120px; opacity: 0.75; animation-delay: 2s; }
+.globo:nth-child(10) { left: 85%; width: 150px; opacity: 0.7; animation-delay: 1s; }
+
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-700px); }
+    100% { transform: translateY(0); }
+}
+
+.icono-fecha{
+    height: 200px;
+    width: auto;
+    margin-left: 455px; /* Espacio entre el texto y la imagen */
+    align-items: center;
+    margin-top: -160px;
+}
